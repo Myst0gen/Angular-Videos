@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<style>
+body{
+    background-image:url("Desktop - 1.png");
+     background-position: center;
+     background-repeat: no-repeat; 
+    background-size: cover;
+    background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+#ID1{
+  position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 65%;
+    height: 75%;
+    background-color: white;
+    border-radius: 5px;
+    /* box-shadow: 0 0.46875rem 2.1875rem rgba(255,255,255,0.03), 0 0.9375rem 1.40625rem rgba(255,255,255,0.03), 0 0.25rem 0.53125rem rgba(255,255,255,0.05), 0 0.125rem 0.1875rem rgba(255,255,255,0.03); */
+    box-shadow: 0 0px 20px rgba(255,255,255,0.19), 0 4px 6px rgba(255,255,255,0.23);
+    /* border: 1px solid white; */
+}
+
+#heading{
+  top:10px;
+  font-family: 'Roboto' ,sans-serif;
+  font-weight: 400;
+  font-size:24px;
+  color:#4A4A4A
+}
+#heading-img{
+  width: 129px;
+   /* position: relative;  */
+  
+  top:20px;
+  left:25px
+}
+/* input:invalid {
+  background: hsla(0, 90%, 70%, 1);
+}
+
+input:valid {
+  background: hsla(100, 90%, 70%, 1);
+} */
+label{
+  position: absolute;
+  top:20px;
+  left:13px;
+  transition: 0.3s all;
+  cursor: text;
+  background-color: white;
+  color:#6d6e70
+} 
+
+/* #brandImage{
+ width: 65%;
+} */
+input.form-control{
+  border:2px solid #6d6e70;
+}
+#input-field{
+  position: relative;
+  height: 44px;
+}
+
+.form-control{
+  height: 48px;
+  outline: 0;
+}
+input.form-control:focus{
+  outline:0;
+  box-shadow: inset 0 -1px 0 #ddd;
+  border:2px solid #0F84EB;
+  transition: 0.3s all;
+}
+input:focus~label,
+input:valid~label{
+  font-size:14px;
+  top:-11px;
+  color:#0F84EB
+}
+
+input:valid{
+  border:2px solid #0F84EB;
+}
+#Mainheading{
+  font-size:13px;
+  font-family: 'Roboto' ,sans-serif;
+  color:#4A4A4A
+}
+.fa.fa-bell{
+  color:#a6ce39;
+}
+#Submitbtn{
+  padding:7px 40px 11px;
+  background-color: #0F84EB;
+  color:white;
+  border:none;
+  border-radius: 40px;
+  box-shadow: 0 2px 20px rgba(15,132,235,0.19), 0 4px 6px rgba(15,132,235,0.23);
+}
+#Submitbtn:hover{
+  background-color: #2794F5;
+  transition: 0.5s;
+}
+#Submitbtn:focus{
+ outline:0
+}
+#logotxt{
+  color: #6d6e70;
+    font-weight: bold;
+    font-size: 16px;
+}
+#logotxt span{
+  color: #a6ce39;
+}
+
+@media (max-width: 480px) {
+    #ID1 {
+        top: 0%; /* IMPORTANT */
+        left: 0%; /* IMPORTANT */
+        display: block;
+        position: absolute;
+        /* background: url(images/background.png) no-repeat center center; */
+        width: 336px;
+        height: 613px;
+
+       
+    }
+}
+
+@media (max-width: 768px) {
+    #ID1 {
+        top: 0%; /* IMPORTANT */
+        left: 0%; /* IMPORTANT */
+        display: block;
+        position: absolute;
+        /* background: url(images/background.png) no-repeat center center; */
+        width: 683px;
+        height: 499px;
+
+       
+    }
+}
+@media (max-width: 1024px) {
+    #ID1 {
+        top: 0%; /* IMPORTANT */
+        left: 0%; /* IMPORTANT */
+        display: block;
+        position: absolute;
+        /* background: url(images/background.png) no-repeat center center; */
+        width: 896px;
+        height: 650px;
+
+       
+    }
+}
+</style>
+</head>
+<body>
+<div id="ID1">
+  <div class="">
+    <img src="logo.png" id="heading-img" class="ml-4 mt-3">
+  </div>
+ <div class="row">
+    <div class="col-sm-6 col-md-7 col-lg-7">
+       <!-- <div id="brandImage" class="d-flex  align-items-center">
+         <img src="about-us.png" id="" style="width:50%;display:block;
+         margin:auto;position: relative;">
+       </div> --> 
+    </div>
+    <div class="col-sm-6 col-md-5 col-lg-5">
+      <div class="p-1 ml-3">
+        <p id="heading">Welcome Back :)</p>
+        <p id="Mainheading" class="">
+        Welcome To <span id="logotxt">Sto<span>x</span>kart</span> Admin panel Kindly Enter Your Username and Password <i class="fa fa-bell" aria-hidden="true"></i>
+        </p>
+      </div>
+        <div class=" mr-3 mt-3 p-2 ml-3" style="position: relative;">
+          <form action="/action_page.php">
+            <div class="form-group" id="input-field">
+              <input type="text" class="form-control"  id="email" required>
+              <label for="name">Username</label>
+            </div>
+            <div class="form-group mt-5" id="input-field">
+              <input type="text" class="form-control"  id="email" required>
+              <label for="name">Password</label>
+            </div>
+            <button type="button" class="mt-4" id="Submitbtn">Login Now <i class="fa fa-unlock" aria-hidden="true"></i></button>
+        <!-- <div class="form-group">
+              <label for="pwd">Password:</label>
+              <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+            </div>
+            <div class="form-group form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox"> Remember me
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button> -->
+          </form>
+          
+        </div>
+        
+        
+    </div>
+ </div>
+</div>
+
+</body>
+</html>
